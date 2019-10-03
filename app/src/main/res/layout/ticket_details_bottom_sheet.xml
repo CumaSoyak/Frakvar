@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/ticket_details"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="100dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+
+                android:layout_alignParentStart="true"
+                android:text="Lütfen gidiş koltuğunuzu seçin"
+                android:textSize="20sp"/>
+        <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_close_black"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp">
+
+
+        <ImageView
+                android:id="@+id/copmany_image"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:src="@drawable/thy"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="@+id/start_time"
+        />
+
+
+        <TextView
+                android:id="@+id/start_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayrampşa"
+                app:layout_constraintStart_toStartOf="@+id/copmany_image"
+                app:layout_constraintBottom_toBottomOf="@+id/chair"/>
+
+
+        <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:30"
+                app:layout_constraintStart_toStartOf="@+id/clock"
+                app:layout_constraintBottom_toTopOf="@+id/clock"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock_item"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:id="@+id/total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60:50"
+                android:layout_marginStart="4dp"
+                app:layout_constraintTop_toTopOf="@+id/clock"
+                app:layout_constraintStart_toEndOf="@+id/clock"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintBottom_toBottomOf="@+id/clock"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="saat"
+                  app:layout_constraintStart_toEndOf="@+id/total_time"
+                  android:id="@+id/textView"
+                  android:layout_marginStart="4dp"
+                  app:layout_constraintTop_toTopOf="@+id/total_time"
+                  app:layout_constraintBottom_toBottomOf="@+id/total_time"/>
+        <TextView
+                android:id="@+id/chair_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2+1"
+                app:layout_constraintStart_toEndOf="@+id/chair"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/chair"
+                app:layout_constraintBottom_toBottomOf="@+id/chair"/>
+        <ImageView
+                android:id="@+id/chair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bag"
+                app:layout_constraintStart_toStartOf="@+id/clock"
+                app:layout_constraintTop_toBottomOf="@+id/clock"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="180"
+                android:textColor="@color/midBlue"
+                android:textStyle="bold"
+                android:layout_marginEnd="24dp"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="TL"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginStart="2dp"
+                  app:layout_constraintStart_toEndOf="@+id/price"
+                  app:layout_constraintTop_toTopOf="@+id/price"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_gravity="end">
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:scaleType="centerInside"
+                   android:src="@drawable/blue"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_marginStart="4dp"
+                  android:text="Erkek-Dolu"/>
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginStart="4dp"
+                   android:scaleType="centerInside"
+                   android:src="@drawable/red"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_marginStart="4dp"
+                  android:text="Kadın-Dolu"/>
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginStart="4dp"
+                   android:scaleType="centerInside"
+                   android:src="@drawable/white"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_marginStart="4dp"
+                  android:text="Boş-Dolu"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:orientation="horizontal"
+            app:spanCount="5"
+            tools:listitem="@layout/item_chair"
+            android:id="@+id/recylerview"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="@string/ticket_datails_single_seat_info"
+              android:paddingStart="10dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Seçtiğiniz Koltuklar"
+                  app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+                  android:layout_marginTop="16sp"
+                  app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView24"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+            <RelativeLayout
+                    android:id="@+id/containerFirstChair"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_centerInParent="true"
+                           android:src="@drawable/white"
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          style="@style/TextStyleTitle"
+                          android:text="1"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/containerSecondChair"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_centerInParent="true"
+                           android:src="@drawable/white"
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          style="@style/TextStyleTitle"
+                          android:text="1"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/containerThirdChair"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_centerInParent="true"
+                           android:src="@drawable/white"
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          style="@style/TextStyleTitle"
+                          android:text="1"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/containerFourthChair"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_centerInParent="true"
+                           android:src="@drawable/white"
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          style="@style/TextStyleTitle"
+                          android:text="1"
+                />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="0dp"
+              android:background="@color/grey"
+              app:layout_constraintTop_toTopOf="@+id/textView24"
+              app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="8dp"
+              app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+              android:layout_marginStart="8dp" android:id="@+id/view5"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintEnd_toStartOf="@+id/next"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginTop="8dp"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginBottom="8dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      android:id="@+id/linearLayout2" app:layout_constraintStart_toEndOf="@+id/view5"
+                      android:layout_marginStart="8dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Toplam fiyat"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      style="@style/TextStyleTitleGreen"
+                      android:text="0 TL"/>
+        </LinearLayout>
+        <Button android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devam"
+                android:drawableRight="@drawable/ic_arrow_blue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

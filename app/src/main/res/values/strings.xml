@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Farkvar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ticket_datails_single_seat_info">Tekli koltuklar firma tarafından farklı fiyatlandırılıyor</string>
+    <string name="title_user_agreement">
+        <u>En uygun
+            <b>Kullanım Koşulları</b>
+        </u>
+        ve
+        <u>
+            <b>Gizlilik Politikası</b>
+        </u>
+        \'nı okudum kabul ediyorum.
+    </string>
+
+</resources>

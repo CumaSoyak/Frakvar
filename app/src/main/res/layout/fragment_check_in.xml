@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.checkin.CheckInFragment">
+
+    <LinearLayout android:layout_width="match_parent" android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout android:layout_width="match_parent" android:orientation="vertical"
+                      android:layout_height="wrap_content" android:layout_margin="25sp"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Pnr Kodu"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/margin_top" android:drawableRight="@drawable/blue"
+                      android:background="@drawable/shadow_backgorund"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/margin_top"
+                      android:text="Yolcunun adı"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/margin_top"
+                      android:background="@drawable/shadow_backgorund"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/margin_top"
+                      android:text="Yolcunun Soyadı"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/margin_top"
+                      android:background="@drawable/shadow_backgorund"/>
+
+
+            <Button
+                    android:id="@+id/find_ticket_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Checki-in"
+                    android:drawableRight="@drawable/ic_arrow_forward_white"
+                    android:background="@drawable/green_background"
+                    android:textColor="@color/white"
+                    android:orientation="horizontal">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

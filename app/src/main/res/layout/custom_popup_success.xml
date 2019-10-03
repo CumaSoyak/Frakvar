@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:background="@color/transparent"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="23dp"
+            android:id="@+id/contentWrap"
+            android:layout_width="match_parent"
+            android:background="@color/grey"
+            android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSuccessClose"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true">
+
+
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/blue"
+                    app:layout_constraintDimensionRatio="w, 1:1"
+                    app:layout_constraintWidth_percent="0.03"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:id="@+id/imgPopupError"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_bus_melon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/txtPopupSucsess"
+                android:layout_marginTop="24dp"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="Parolanız başarıyla değiştirildi"
+                android:fontFamily="@font/q_medium"
+                android:layout_below="@id/clPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPopupSuccess"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_centerInParent="true"
+                android:background="@color/colorAccent"
+                android:text="TAMAM"
+                android:textSize="15sp"
+                android:fontFamily="@font/q_bold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/txtPopupSucsess"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

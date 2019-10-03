@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+               >
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+
+                android:layout_alignParentStart="true"
+                android:text="Lütfen gidiş koltuğunuzu seçin"
+                android:textSize="20sp"/>
+        <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_close_black"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RadioButton android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fiyata göre artan"
+                  android:button="@null"
+                 android:paddingStart="10dp"
+                 android:buttonTint="@color/gray_white"
+                 android:drawablePadding="30dp"
+                 android:checked="true"
+                 android:drawableRight="@android:drawable/btn_radio"
+                 android:textSize="20dip"
+                 android:gravity="start|center"
+
+    />
+    <RadioButton android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fiyata göre artan"
+                 android:button="@null"
+                 android:paddingStart="10dp"
+                 android:buttonTint="@color/gray_white"
+                 android:drawablePadding="30dp"
+                 android:checked="true"
+                 android:drawableRight="@android:drawable/btn_radio"
+                 android:textSize="20dip"
+                 android:gravity="start|center"
+
+    />
+    <RadioButton android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fiyata göre artan"
+                 android:button="@null"
+                 android:paddingStart="10dp"
+                 android:buttonTint="@color/gray_white"
+                 android:drawablePadding="30dp"
+                 android:checked="true"
+                 android:drawableRight="@android:drawable/btn_radio"
+                 android:textSize="20dip"
+                 android:gravity="start|center"
+
+    />
+    <RadioButton android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fiyata göre artan"
+                 android:button="@null"
+                 android:paddingStart="10dp"
+                 android:buttonTint="@color/gray_white"
+                 android:drawablePadding="30dp"
+                 android:checked="true"
+                 android:drawableRight="@android:drawable/btn_radio"
+                 android:textSize="20dip"
+                 android:gravity="start|center"
+
+    />
+    <RadioButton android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Fiyata göre artan"
+                 android:button="@null"
+                 android:paddingStart="10dp"
+                 android:buttonTint="@color/gray_white"
+                 android:drawablePadding="30dp"
+                 android:checked="true"
+                 android:drawableRight="@android:drawable/btn_radio"
+                 android:textSize="20dip"
+                 android:gravity="start|center"
+
+    />
+</LinearLayout>

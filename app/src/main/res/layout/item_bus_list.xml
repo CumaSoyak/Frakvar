@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+         android:layout_marginBottom="10dp">
+
+
+    <ImageView
+            android:id="@+id/copmany_image"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/thy"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/start_time"
+    />
+
+
+    <TextView
+            android:id="@+id/start_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayrampşa"
+            app:layout_constraintStart_toStartOf="@+id/copmany_image"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/chair"/>
+
+
+    <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:30"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/clock" android:layout_marginTop="8dp"/>
+    <ImageView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_access_time"
+            app:layout_constraintStart_toStartOf="@+id/start_time"
+            app:layout_constraintStart_toEndOf="@+id/start_station" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/total_time" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view4" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toTopOf="@+id/clock"
+
+            app:layout_constraintStart_toEndOf="@+id/clock"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/clock"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="sa"
+              app:layout_constraintStart_toEndOf="@+id/total_time"
+              android:id="@+id/textView"
+              android:layout_marginStart="4dp"
+              app:layout_constraintTop_toTopOf="@+id/total_time"
+              app:layout_constraintBottom_toBottomOf="@+id/total_time"/>
+    <TextView
+            android:id="@+id/chair_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2+1"
+              app:layout_constraintTop_toTopOf="@+id/chair"
+            app:layout_constraintStart_toStartOf="@+id/total_time"/>
+    <ImageView
+            android:id="@+id/chair"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/white"
+            app:layout_constraintStart_toStartOf="@+id/clock"
+             app:layout_constraintTop_toBottomOf="@+id/clock"
+            app:layout_constraintEnd_toEndOf="@+id/clock"/>
+
+
+    <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="180 TL"
+            android:textSize="18dp"
+            android:textColor="@color/midBlue"
+            android:textStyle="bold" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="@+id/start_time"/>
+
+    <Button
+            android:id="@+id/choose_button"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/price"
+            android:background="@drawable/green_button"
+            android:drawableEnd="@drawable/ic_arrow_forward_white"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:text="Seç"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/chair"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/price"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.7dp"
+          android:background="@color/grey"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:id="@+id/view4"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

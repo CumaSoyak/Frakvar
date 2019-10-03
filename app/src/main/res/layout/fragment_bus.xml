@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.bus.bushome.BusFragment">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:id="@+id/start_station"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="Nereden"
+                                android:textColor="@color/melon"
+                                android:textStyle="bold"/>
+
+                        <TextView
+                                android:id="@+id/start_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="İstanbul"/>
+
+                        <TextView
+                                android:id="@+id/start_station_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:visibility="gone"
+                                android:text="Sabiha gökçen"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                         >
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@color/cloudyBlue"
+                            android:elevation="0dp"/>
+
+                    <ImageView
+                            android:id="@+id/change_route_bus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                             android:src="@drawable/ic_change_rote"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/end_station"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="Nereden"
+                                android:textColor="@color/melon"
+                                android:textStyle="bold"/>
+
+                        <TextView
+                                android:id="@+id/end_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="İstanbul"/>
+
+                        <TextView
+                                android:id="@+id/end_station_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:visibility="gone"
+                                android:text="Sabiha gökçen"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/cloudyBlue"
+                    android:elevation="0dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:id="@+id/time_bus"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:id="@+id/bus"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_calendar"/>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginEnd="20dp">
+
+                        <TextView
+                                android:id="@+id/day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/muli_extralight"
+                                android:gravity="center"
+                                android:hint="xxx"
+                                android:textColor="@color/melon"
+                                android:textSize="27sp"
+                                android:textStyle="bold"
+                                android:typeface="normal"/>
+
+                        <TextView
+                                android:id="@+id/month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toEndOf="@id/day"
+                                android:gravity="center"
+                                android:text="xxxx"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        <TextView
+                                android:id="@+id/name_of_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/month"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_toEndOf="@id/day"
+                                android:fontFamily="@font/muli_extralight"
+                                android:gravity="center"
+                                android:text="xxxx"
+                                android:textColor="@color/brownishGrey"
+                                android:textStyle="bold"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@color/cloudyBlue"
+                            android:elevation="0dp"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                        <RadioGroup
+                                android:id="@+id/radiogroup_route_bus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <RadioButton
+                                    android:id="@+id/choose_single_route"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:buttonTint="@color/midBlue"
+                                    android:checked="true"
+                                    android:gravity="center"
+                                    android:text="Tek Yön Gidiş"/>
+
+                            <RadioButton
+                                    android:id="@+id/choose_double_route"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:buttonTint="@color/midBlue"
+                                    android:gravity="center"
+                                    android:text="Dönüş ekle"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/find_ticket_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Bana Ucuz Bilet Bul"
+                    android:background="@drawable/green_background"
+                    android:textColor="@color/white"
+                    android:orientation="horizontal">
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

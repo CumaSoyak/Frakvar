@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:background="@color/transparent"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_top"
+             android:layout_gravity="center">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+    >
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/blue"
+                app:layout_constraintDimensionRatio="w, 1:1"
+                app:layout_constraintWidth_percent="0.03"
+                android:layout_marginTop="12dp"
+                android:id="@+id/imageView9"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNotication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

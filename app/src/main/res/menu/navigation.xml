@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/airmenu"-->
+        <!--android:icon="@drawable/ic_airplane"-->
+        <!--android:title="Uçak Bileti" />-->
+
+    <item
+        android:id="@+id/busmenu"
+        android:icon="@drawable/ic_bus_melon"
+        android:title="Otobüs Bileti" />
+
+    <item
+        android:id="@+id/checkinmenu"
+        android:icon="@drawable/ic_check_in"
+        android:title="Check-in">
+
+    </item>
+
+</menu>

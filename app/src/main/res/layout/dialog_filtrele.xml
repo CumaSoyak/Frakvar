@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:background="@color/gray_white"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ticket_details"
+             android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Filtreler"
+                    android:textSize="20sp" android:id="@+id/textView12"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Temizle"
+                      android:id="@+id/temizle"
+                      android:gravity="center"
+                      app:layout_constraintEnd_toStartOf="@+id/cancel"
+                      android:layout_marginEnd="16dp"/>
+            <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_close_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="8dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_margin="@dimen/margin_top"
+                      android:text="Oturma Düzeni" android:id="@+id/textview"/>
+            <Button android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_top"
+                    android:background="@drawable/button_melon_radius"
+                    app:layout_constraintTop_toBottomOf="@+id/textview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/ikiArtiBir"
+                    android:text="2+1 Koltuk"
+                    app:layout_constraintEnd_toStartOf="@+id/ikiArtiİkiButon"/>
+            <Button android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ikiArtiİkiButon"
+                    android:text="2+1 Koltuk"
+                    android:background="@drawable/button_melon_radius"
+                    android:drawableRight="@android:drawable/btn_dialog"
+                    app:layout_constraintStart_toEndOf="@+id/ikiArtiBir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ikiArtiBir"
+                    app:layout_constraintBottom_toBottomOf="@+id/ikiArtiBir"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Bilet Fiyatı"
+                      android:layout_margin="@dimen/margin_top"
+                      app:layout_constraintTop_toBottomOf="@+id/ikiArtiBir"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:id="@+id/textView25"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="@dimen/margin_top"
+                    android:background="@drawable/back_price_previous_last"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" android:id="@+id/constraintLayout">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"
+                          android:layout_margin="@dimen/margin_top"
+                          android:text="Maksimum Fiyat" android:id="@+id/textView26"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="120 TL"
+                          android:id="@+id/biletFiyati"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"
+                          android:layout_margin="@dimen/margin_top"
+                />
+                <SeekBar android:layout_width="0dp" android:layout_height="wrap_content"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         android:layout_margin="@dimen/margin_top"
+                         android:id="@+id/biletFiyatiSeekBar"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/textView26"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Saat"
+                      android:layout_margin="@dimen/margin_top"
+                      app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                      app:layout_constraintStart_toStartOf="parent" android:id="@+id/textView28"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="@dimen/margin_top"
+                    android:background="@drawable/back_price_previous_last"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" android:id="@+id/constraintLayout2">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"
+                          android:layout_margin="@dimen/margin_top"
+                          android:text="İstanbul-Avrupa" android:id="@+id/nerdenNereye"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Sıfırla"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"
+                          android:layout_margin="@dimen/margin_top"
+                          android:id="@+id/sifirla"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Kalkış"
+                          android:layout_margin="@dimen/margin_top"
+                          app:layout_constraintTop_toBottomOf="@+id/nerdenNereye"
+                          app:layout_constraintStart_toStartOf="parent" android:id="@+id/textView29"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="05-05"
+                          android:id="@+id/saat"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          android:layout_margin="@dimen/margin_top"
+                          app:layout_constraintBottom_toBottomOf="@+id/textView29"
+                          app:layout_constraintTop_toTopOf="@+id/textView29"/>
+                <SeekBar android:layout_width="0dp" android:layout_height="wrap_content"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         android:layout_margin="@dimen/margin_top"
+                         app:layout_constraintTop_toBottomOf="@+id/textView29" android:id="@+id/SaatSeekBar"/>
+                <Button android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shadow_border_green"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="@dimen/margin_top"
+                        android:layout_marginTop="@dimen/margin_top"
+                        app:layout_constraintTop_toBottomOf="@+id/SaatSeekBar"
+                        android:id="@+id/gece"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sabah"/>
+                <Button android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shadow_border_green"
+                        android:layout_margin="2dp"
+                        app:layout_constraintTop_toTopOf="@+id/gece"
+                        app:layout_constraintBottom_toBottomOf="@+id/gece"
+                        app:layout_constraintStart_toEndOf="@+id/gece"
+                        android:id="@+id/sabah"
+                        app:layout_constraintEnd_toStartOf="@+id/ogle"/>
+                <Button android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/aksam"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/shadow_border_green"
+                        app:layout_constraintStart_toEndOf="@+id/ogle"
+                        app:layout_constraintEnd_toEndOf="@+id/SaatSeekBar"
+                        app:layout_constraintTop_toTopOf="@+id/ogle"
+                        app:layout_constraintBottom_toBottomOf="@+id/ogle" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="35dp"
+                          android:layout_margin="2dp"
+                          android:id="@+id/ogle"
+                          android:text="Akşam"
+                          android:textSize="11sp"
+                          android:drawableLeft="@android:drawable/btn_dialog"
+                          android:background="@drawable/shadow_border_green"
+                          app:layout_constraintStart_toEndOf="@+id/sabah"
+                          app:layout_constraintEnd_toStartOf="@+id/aksam"
+                          app:layout_constraintTop_toTopOf="@+id/sabah"
+                          app:layout_constraintBottom_toBottomOf="@+id/sabah"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="Kalkış Yeri"
+                      android:layout_margin="@dimen/margin_top"
+                      app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                      app:layout_constraintStart_toStartOf="parent" android:id="@+id/textView31"/>
+            <RelativeLayout android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_margin="@dimen/margin_top"
+                            app:layout_constraintTop_toBottomOf="@+id/textView31" android:id="@+id/relativeLayout2">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_centerVertical="true"
+                          android:text="Tümünü Seç"/>
+                <CheckBox android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:layout_alignParentEnd="true"
+                />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_margin="@dimen/margin_top"
+                    tools:listitem="@layout/item_filtre_station"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" android:id="@+id/recyclerView">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                    android:id="@+id/uygula"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="@dimen/margin_top"
+                    android:text="Uygula"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

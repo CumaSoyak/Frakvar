@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="midBlue">#285ea7</color>
+    <color name="mavi">#3e669e</color>
+    <color name="iceBlue">#f1f9fc</color>
+    <color name="black">#2f2f2f</color>
+    <color name="paleBlue">#dee4f0</color>
+
+    <!--bu değer ana renk-->
+
+    <color name="melon">#e56d72</color>
+    <color name="melon1">#F8939D</color>
+    <color name="brownishGrey">#767676</color>
+    <color name="cloudyBlue">#bdd4da</color>
+    <color name="paleGrey">#f8fbfd</color>
+    <color name="white">#ffff</color>
+    <color name="green">#7DB901</color>
+    <color name="rosy_pink">#ed6d73</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="greyish_brown">#4b4b4b</color>
+    <color name="gray_white">#ededed</color>
+    <color name="pale_grey">#f0f5fa</color>
+
+    <color name="lighterx_grey">#eaeaea</color>
+
+    <color name="dark_green">#1E9E33</color>
+    <color name="pink">#F01F81</color>
+    <color name="blue">#4AC3C6</color>
+    <color name="green_2">#1c8e5d</color>
+    <color name="red">#DC4E41</color>
+    <color name="yellow">#F7BB11</color>
+    <color name="grayBack">#EFEFEF</color>
+    <color name="bg_color">#f8f8f8</color>
+    <color name="color_edittext">#AEAEB4</color>
+    <color name="check_false">#AEAEB4</color>
+    <color name="colorTextColor">#2e2e2e</color>
+    <color name="colorViewColor">#E3E3E3</color>
+
+
+    <color name="colorTransparent">#43000000</color>
+    <color name="transparent">#0000</color>
+    <color name="white_transparent">#ccffffff</color>
+    <color name="white_transparent_x">#99ffffff</color>
+    <color name="white_transparent_xx">#66ffffff</color>
+    <color name="black_transparent">#AA000000</color>
+
+    <color name="colorEditText">#cccccc</color>
+
+    <color name="black_alpha">#2000</color>
+    <color name="black_alpha_dark">#A000</color>
+    <color name="black_alpha_darker">#C000</color>
+
+    <color name="line">#eeeeee</color>
+
+    <color name="green_1">#1C8E5D</color>
+    <color name="green_3">#1c8e5d</color>
+    <color name="green_4">#bcdecf</color>
+    <color name="floating_shadow">#CBE2D8</color>
+
+    <color name="grey_1">#6A6A77</color>
+
+    <color name="textColor">#58595b</color>
+    <color name="textExpandableColor">#909091</color>
+
+    <color name="bottom_nav_unstate">#6A6A77</color>
+
+
+    <color name="toolbar_count">#DC4E41</color>
+
+
+</resources>

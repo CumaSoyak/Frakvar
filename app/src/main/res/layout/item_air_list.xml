@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_flight_item" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top">
+
+            <ImageView
+                android:id="@+id/copmany_image"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:src="@drawable/thy" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/copmany_image">
+
+                <TextView
+                    android:id="@+id/start_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAW" />
+
+                <TextView
+                    android:id="@+id/icon_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/greyish_brown"
+                    android:textStyle="bold"
+                    android:text=">" />
+
+                <TextView
+                    android:id="@+id/end_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESB" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top">
+
+            <ImageView
+                android:id="@+id/chair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bag" />
+
+            <TextView
+                android:id="@+id/kilogram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chair"
+                android:layout_marginStart="5dp"
+                android:text="1x15 kg" />
+
+            <TextView
+                android:id="@+id/fight_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chair"
+                android:textColor="@color/rosy_pink"
+                android:text="Direkt Uçuş" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/greyish_brown"
+                android:text="16:50" />
+
+            <ImageView
+                android:id="@+id/direction"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/start_time"
+                android:src="@drawable/ic_right_arrow" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/direction"
+                android:text="60:50" />
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_time"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_clock_item" />
+
+            <TextView
+                android:id="@+id/total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_time"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/clock"
+                android:text="1 saat 15 dk." />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choose_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="170 TL"
+                android:textColor="@color/midBlue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:layout_marginTop="10dp"
+                android:background="@color/midBlue"
+                android:drawableEnd="@drawable/ic_right_white"
+                android:gravity="center"
+                android:text="Seç"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_details"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brownishGrey" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_more_detail" />
+    </LinearLayout>
+</LinearLayout>
